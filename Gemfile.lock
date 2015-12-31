@@ -1,17 +1,28 @@
+PATH
+  remote: .
+  specs:
+    contribcalendar (0.1.0)
+      nokogiri
+      rmagick
+
 GEM
   remote: https://rubygems.org/
   specs:
-    mini_portile (0.6.2)
-    nokogiri (1.6.6.2)
-      mini_portile (~> 0.6.0)
+    mini_portile2 (2.0.0)
+    minitest (5.8.2)
+    nokogiri (1.6.7.1)
+      mini_portile2 (~> 2.0.0.rc2)
+    rake (10.4.2)
     rmagick (2.15.4)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  nokogiri
-  rmagick
+  bundler (~> 1.10)
+  contribcalendar!
+  minitest
+  rake (~> 10.0)
 
 BUNDLED WITH
-   1.10.6
+   1.11.2

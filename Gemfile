@@ -1,4 +1,4 @@
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
-gem "nokogiri"
-gem "rmagick"
+# Specify your gem's dependencies in contribcalendar.gemspec
+gemspec
