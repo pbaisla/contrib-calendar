@@ -1,0 +1,24 @@
+#! /usr/bin/env ruby
+
+require 'contribcalendar'
+require 'slop'
+
+opts = Slop.parse do |o|
+  o.string '-u', '--user', 'GitHub username'
+  o.string '-d', '--destination', 'destination directory', default: '.'
+  o.on '--version', 'print the version' do
+    puts Contribcalendar::VERSION
+    exit
+  end
+end
+
+user = opts[:user]
+destination = opts[:destination]
+
+unless user.nil?
+  Contribcalendar.make_wallpaper(user, destination)
+  exit
+end
+
+# Print usage
+puts opts

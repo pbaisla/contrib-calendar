@@ -23,4 +23,5 @@ Gem::Specification.new do |spec|
 
   spec.add_runtime_dependency "nokogiri"
   spec.add_runtime_dependency "rmagick"
+  spec.add_runtime_dependency "slop"
 end

@@ -23,7 +23,12 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```
+contribcalendar [options]
+    -u, --user         GitHub username
+    -d, --destination  destination directory
+    --version          print the version
+```
 
 ## Development
 

@@ -7,7 +7,7 @@ module Contribcalendar
 
   module_function
 
-  def make_wallpaper(username)
+  def make_wallpaper(username, destination)
     calendar = Calendar.new(username)
 
     wallpaper = Image.new(1600, 900)
@@ -43,7 +43,7 @@ module Contribcalendar
       end
     end
 
-    wallpaper.write('./wallpaper.jpg')
+    wallpaper.write(File.join(destination, 'wallpaper.jpg'))
 
   end
 
